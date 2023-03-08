@@ -1,0 +1,1362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="short icon" href="./images/icon tab/20200826_v0V1qnLBcvzbbAlkVN8OT0uA.jpg">
+    <link rel="stylesheet" href="./responsive.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Scott platon by Thuan</title>
+</head>
+<body>
+    <div class="root">
+        <div class="fixed_scroll">
+            <div id="topbar">
+                <div class="container topbar-flex">
+                    <div class="topbar__item">
+                        <div class="topbar-item__left">
+                            <ul>
+                                <li><a href="tel:0828624326">
+                                    <span class="topbar-item__icon topbar-item__left-icon"></span>
+                                    <span class="topbar-item__title"><b>0828.624.326</b></span>
+                                </a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="topbar__item">
+                        <div class="topbar-item__right">
+                            <ul>
+                                <li>
+                                    <a href="/user/signin" title="Đăng nhập">
+                                        <span class="topbar-item__icon topbar-item__right-icon-4"></span>
+                                        <span class="topbar-item__title">Tài khoản</span>
+                                    </a>
+                                </li>
+
+                                <li id="cart_header_top">
+                                    <span id="site-cart-handle" class="icon-cart">
+                                        <a href="/cart" class="count-cart" title="Giỏ hàng">
+                                            <span class="topbar-item__icon topbar-item__right-icon-5"></span>
+                                            <span class="topbar-item__title">
+                                                Giỏ hàng
+                                                <span>
+                                                    (<span class="count">0</span>)
+                                                </span>
+                                            </span>
+                                        </a>
+                                    </span>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="navbar">
+                <div>
+                    <header id="site-header" class="main-header">
+                        <div class="header__item col-2">
+                            <div class="header-wrap">
+                                <div class="header-wrap-logo">
+                                    <a href="/">
+                                        <img src="./logo/logo.webp" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="header__item col-8">
+                            <div class="header__menu">
+                                <div id="nav">
+                                    <ul class="main-nav">
+                                        <li class="menu__item">
+                                            <a href="" class="menu-item__title">Random Pack</a>
+                                        </li>
+                                        <li class="menu__item">
+                                            <a href="" class="menu-item__title">cotton | PRIME® (cao cấp)</a>
+                                        </li>
+                                        <li class="menu__item">
+                                            <a href="" class="menu-item__title">cotton | FLEX® (tiêu chuẩn)</a>
+                                        </li>
+                                        <li class="menu__item">
+                                            <a href="" class="menu-item__title">Quần thun</a>
+                                        </li>
+                                        <li class="menu__item">
+                                            <a href="" class="menu-item__title">Quần Kaki</a>
+                                        </li>
+                                        <li class="menu__item">
+                                            <a href="" class="menu-item__title">Áo khoác</a>
+                                        </li>
+                                        <li class="menu__item">
+                                            <a href="" class="menu-item__title">Áo sơ mi</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="header__item col-2">
+                            <div class="header__search">
+                                <form action="" class="header__search-form" action="/search">
+                                    <input type="text" class="header__search-input" placeholder="Tìm Kiếm...">
+                                    <input type="submit" class="btn-search">
+                                </form>
+                            </div>
+                        </div>
+                    </header>
+                </div>
+            </div>
+        </div>
+
+        <!-- <main class="main-index container">
+            <div class="slide-arrow">
+                <div class="slide-carousel slide-loaded">
+                    <div class="slide-stage-outer">
+                        <div class="slide-stage">
+                            <div class="slide-item cloned">
+                                <a href="/">
+                                    <img src="./slide/1.jpg" alt="">
+                                </a>
+                            </div>
+
+                            <div class="slide-item">
+                                <a href="/">
+                                    <img src="./slide/2.png" alt="">
+                                </a>
+                            </div>
+
+                            <div class="slide-item">
+                                <a href="/">
+                                    <img src="./slide/3.jpg" alt="">
+                                </a>
+                            </div>
+
+                            <div class="slide-item">
+                                <a href="/">
+                                    <img src="./slide/4.png" alt="">
+                                </a>
+                            </div>
+
+                            <div class="slide-item">
+                                <a href="/">
+                                    <img src="./slide/5.jpg" alt="">
+                                </a>
+                            </div>
+
+                            <div class="slide-item">
+                                <a href="/">
+                                    <img src="./slide/6.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main> -->
+
+        <main class="slider-frame">
+            <div class="slider">
+                <i class="bx bxs-chevron-left slider-prev"></i>
+
+                <ul class="slider-dots">
+                    <li class="slider-dot-item active" data-index="0"></li>
+                    <li class="slider-dot-item" data-index="1"></li>
+                    <li class="slider-dot-item" data-index="2"></li>
+                    <li class="slider-dot-item" data-index="3"></li>
+                    <li class="slider-dot-item" data-index="4"></li>
+                    <li class="slider-dot-item" data-index="5"></li>
+                </ul>
+
+                <div class="slider-wrapper">
+                    <div class="slider-main">
+                        <div class="slider-item">
+                            <a href="/"><img src="./slide/1.jpg" alt=""></a>
+                        </div>
+
+                        <div class="slider-item">
+                            <a href="/"><img src="./slide/2.png" alt=""></a>
+                        </div>
+
+                        <div class="slider-item">
+                            <a href="/"><img src="./slide/3.jpg" alt=""></a>
+                        </div>
+
+                        <div class="slider-item">
+                            <a href="/"><img src="./slide/4.png" alt=""></a>
+                        </div>
+
+                        <div class="slider-item">
+                            <a href="/"><img src="./slide/5.jpg" alt=""></a>
+                        </div>
+
+                        <div class="slider-item">
+                            <a href="/"><img src="./slide/6.jpg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+
+                <i class="bx bxs-chevron-right slider-next"></i>
+            </div>
+
+            <div id="wrapper-product">
+                <section class="section-product">
+                    <div class="container-product">
+                        <div class="product-title">
+                            <h2>
+                                <a href="">cotton | PRIME® (cao cấp)</a>
+                            </h2>
+                        </div>
+
+                        <div class="product-content">
+                            <div class="product-content__list">
+                                <div class="product-list__item col-3 product-loop">
+                                    <div class="product-block">
+                                        <div class="product-img">
+                                            <a href="">
+                                                <img src="./product/1.jpeg" alt="" class="img-loop lazyLoad">
+                                                <img src="./product/img-hover.jpeg" alt="" class="img-loop img-hover">
+                                            </a>
+                                        </div>
+
+                                        <div class="product-info">
+                                            <div class="product-detail text-center">
+                                                <div class="box-product-detail">
+                                                    <h3 class="product-name"><a href="">Áo Star logo</a></h3>
+                                                </div>
+
+                                                <div class="box-product-price">
+                                                    <p class="product-price">
+                                                        <span class="price-sale">100,000đ</span>
+                                                        <span class="product-price-del">
+                                                            <del>200,000đ</del>
+                                                        </span>
+                                                    </p>
+                                                </div>
+
+                                                <div class="product-sale">
+                                                    <div class="text-center">
+                                                        <span class="product-saleRed">Giảm 50%</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="product-btn visible-block">
+                                            <a href="" class="crossbar">
+                                                <i class='bx bx-cart'></i>
+                                                Mua nhanh
+                                            </a>
+
+                                            <a href="">
+                                                <i class='bx bxs-bullseye'></i>
+                                                Xem chi tiết
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product-list__item col-3 product-loop">
+                                    <div class="product-block">
+                                        <div class="product-img">
+                                            <a href="">
+                                                <img src="./product/2.jpeg" alt="" class="img-loop lazyLoad">
+                                                <img src="./product/img-hover1.jpeg" alt="" class="img-loop img-hover">
+                                            </a>
+                                        </div>
+
+                                        <div class="product-info">
+                                            <div class="product-detail text-center">
+                                                <div class="box-product-detail">
+                                                    <h3 class="product-name"><a href="">Áo XOXO</a></h3>
+                                                </div>
+
+                                                <div class="box-product-price">
+                                                    <p class="product-price">
+                                                        <span class="price-sale">100,000đ</span>
+                                                        <span class="product-price-del">
+                                                            <del>200,000đ</del>
+                                                        </span>
+                                                    </p>
+                                                </div>
+
+                                                <div class="product-sale">
+                                                    <div class="text-center">
+                                                        <span class="product-saleRed">Giảm 50%</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="product-btn visible-block">
+                                            <a href="" class="crossbar">
+                                                <i class='bx bx-cart'></i>
+                                                Mua nhanh
+                                            </a>
+
+                                            <a href="">
+                                                <i class='bx bxs-bullseye'></i>
+                                                Xem chi tiết
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    
+                                </div>
+
+                                <div class="product-list__item col-3 product-loop">
+                                    <div class="product-block">
+                                        <div class="product-img">
+                                            <a href="">
+                                                <img src="./product/3.jpeg" alt="" class="img-loop lazyLoad">
+                                                <img src="./product/img-hover2.jpeg" alt="" class="img-loop img-hover">
+                                            </a>
+                                        </div>
+
+                                        <div class="product-info">
+                                            <div class="product-detail text-center">
+                                                <div class="box-product-detail">
+                                                    <h3 class="product-name"><a href="">Áo HANOI 2023</a></h3>
+                                                </div>
+
+                                                <div class="box-product-price">
+                                                    <p class="product-price">
+                                                        <span class="price-sale">100,000đ</span>
+                                                        <span class="product-price-del">
+                                                            <del>200,000đ</del>
+                                                        </span>
+                                                    </p>
+                                                </div>
+
+                                                <div class="product-sale">
+                                                    <div class="text-center">
+                                                        <span class="product-saleRed">Giảm 50%</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="product-btn visible-block">
+                                            <a href="" class="crossbar">
+                                                <i class='bx bx-cart'></i>
+                                                Mua nhanh
+                                            </a>
+
+                                            <a href="">
+                                                <i class='bx bxs-bullseye'></i>
+                                                Xem chi tiết
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product-list__item col-3 product-loop">
+                                    <div class="product-block">
+                                        <div class="product-img">
+                                            <a href="">
+                                                <img src="./product/4.jpeg" alt="" class="img-loop lazyLoad">
+                                                <img src="./product/img-hover3.jpeg" alt="" class="img-loop img-hover">
+                                            </a>
+                                        </div>
+
+                                        <div class="product-info">
+                                            <div class="product-detail text-center">
+                                                <div class="box-product-detail">
+                                                    <h3 class="product-name"><a href="">Áo SAIGON 2023</a></h3>
+                                                </div>
+
+                                                <div class="box-product-price">
+                                                    <p class="product-price">
+                                                        <span class="price-sale">100,000đ</span>
+                                                        <span class="product-price-del">
+                                                            <del>200,000đ</del>
+                                                        </span>
+                                                    </p>
+                                                </div>
+
+                                                <div class="product-sale">
+                                                    <div class="text-center">
+                                                        <span class="product-saleRed">Giảm 50%</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="product-btn visible-block">
+                                            <a href="" class="crossbar">
+                                                <i class='bx bx-cart'></i>
+                                                Mua nhanh
+                                            </a>
+
+                                            <a href="">
+                                                <i class='bx bxs-bullseye'></i>
+                                                Xem chi tiết
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product-list__item col-3 product-loop">
+                                    <div class="product-block">
+                                        <div class="product-img">
+                                            <a href="">
+                                                <img src="./product/5.jpeg" alt="" class="img-loop lazyLoad">
+                                                <img src="./product/img-hover.jpeg" alt="" class="img-loop img-hover">
+                                            </a>
+                                        </div>
+
+                                        <div class="product-info">
+                                            <div class="product-detail text-center">
+                                                <div class="box-product-detail">
+                                                    <h3 class="product-name"><a href="">Áo Music For All</a></h3>
+                                                </div>
+
+                                                <div class="box-product-price">
+                                                    <p class="product-price">
+                                                        <span class="price-sale">100,000đ</span>
+                                                        <span class="product-price-del">
+                                                            <del>200,000đ</del>
+                                                        </span>
+                                                    </p>
+                                                </div>
+
+                                                <div class="product-sale">
+                                                    <div class="text-center">
+                                                        <span class="product-saleRed">Giảm 50%</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="product-btn visible-block">
+                                            <a href="" class="crossbar">
+                                                <i class='bx bx-cart'></i>
+                                                Mua nhanh
+                                            </a>
+
+                                            <a href="">
+                                                <i class='bx bxs-bullseye'></i>
+                                                Xem chi tiết
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product-list__item col-3 product-loop">
+                                    <div class="product-block">
+                                        <div class="product-img">
+                                            <a href="">
+                                                <img src="./product/6.jpeg" alt="" class="img-loop lazyLoad">
+                                                <img src="./product/img-hover6.jpeg" alt="" class="img-loop img-hover">
+                                            </a>
+                                        </div>
+
+                                        <div class="product-info">
+                                            <div class="product-detail text-center">
+                                                <div class="box-product-detail">
+                                                    <h3 class="product-name"><a href="">Áo The Space</a></h3>
+                                                </div>
+
+                                                <div class="box-product-price">
+                                                    <p class="product-price">
+                                                        <span class="price-sale">100,000đ</span>
+                                                        <span class="product-price-del">
+                                                            <del>200,000đ</del>
+                                                        </span>
+                                                    </p>
+                                                </div>
+
+                                                <div class="product-sale">
+                                                    <div class="text-center">
+                                                        <span class="product-saleRed">Giảm 50%</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="product-btn visible-block">
+                                            <a href="" class="crossbar">
+                                                <i class='bx bx-cart'></i>
+                                                Mua nhanh
+                                            </a>
+
+                                            <a href="">
+                                                <i class='bx bxs-bullseye'></i>
+                                                Xem chi tiết
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product-list__item col-3 product-loop">
+                                    <div class="product-block">
+                                        <div class="product-img">
+                                            <a href="">
+                                                <img src="./product/7.jpg" alt="" class="img-loop lazyLoad">
+                                                <img src="./product/img-hover7" alt="" class="img-loop img-hover">
+                                            </a>
+                                        </div>
+
+                                        <div class="product-info">
+                                            <div class="product-detail text-center">
+                                                <div class="box-product-detail">
+                                                    <h3 class="product-name"><a href="">Áo HOPE</a></h3>
+                                                </div>
+
+                                                <div class="box-product-price">
+                                                    <p class="product-price">
+                                                        <span class="price-sale">100,000đ</span>
+                                                        <span class="product-price-del">
+                                                            <del>200,000đ</del>
+                                                        </span>
+                                                    </p>
+                                                </div>
+
+                                                <div class="product-sale">
+                                                    <div class="text-center">
+                                                        <span class="product-saleRed">Giảm 50%</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="product-btn visible-block">
+                                            <a href="" class="crossbar">
+                                                <i class='bx bx-cart'></i>
+                                                Mua nhanh
+                                            </a>
+
+                                            <a href="">
+                                                <i class='bx bxs-bullseye'></i>
+                                                Xem chi tiết
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product-list__item col-3 product-loop">
+                                    <div class="product-block">
+                                        <div class="product-img">
+                                            <a href="">
+                                                <img src="./product/8.jpg" alt="" class="img-loop lazyLoad">
+                                                <img src="./product/img-hover8.jpeg" alt="" class="img-loop img-hover">
+                                            </a>
+                                        </div>
+
+                                        <div class="product-info">
+                                            <div class="product-detail text-center">
+                                                <div class="box-product-detail">
+                                                    <h3 class="product-name"><a href="">Áo 2000s</a></h3>
+                                                </div>
+
+                                                <div class="box-product-price">
+                                                    <p class="product-price">
+                                                        <span class="price-sale">100,000đ</span>
+                                                        <span class="product-price-del">
+                                                            <del>200,000đ</del>
+                                                        </span>
+                                                    </p>
+                                                </div>
+
+                                                <div class="product-sale">
+                                                    <div class="text-center">
+                                                        <span class="product-saleRed">Giảm 50%</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="product-btn visible-block">
+                                            <a href="" class="crossbar">
+                                                <i class='bx bx-cart'></i>
+                                                Mua nhanh
+                                            </a>
+
+                                            <a href="">
+                                                <i class='bx bxs-bullseye'></i>
+                                                Xem chi tiết
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <section class="section-product">
+                    <div class="container-product">
+                        <div class="product-title">
+                            <h2>
+                                <a href="">COTTON | FLEX® (TIÊU CHUẨN)</a>
+                            </h2>
+                        </div>
+
+                        <div class="product-content">
+                            <div class="product-content__list">
+                                <div class="product-list__item col-3 product-loop">
+                                    <div class="product-block">
+                                        <div class="product-img">
+                                            <a href="">
+                                                <img src="./product2/1.jpg" alt="" class="img-loop">
+                                                <img src="./product2/1.jpg" alt="" class="img-loop img-hover">
+                                            </a>
+                                        </div>
+
+                                        <div class="product-info">
+                                            <div class="product-detail text-center">
+                                                <div class="box-product-detail">
+                                                    <h3 class="product-name"><a href="">Áo FLEX® | Nguoi binh thuong</a></h3>
+                                                </div>
+
+                                                <div class="box-product-price">
+                                                    <p class="product-price">
+                                                        <span class="price-sale">80,000đ</span>
+                                                        <span class="product-price-del">
+                                                            <del>160,000đ</del>
+                                                        </span>
+                                                    </p>
+                                                </div>
+
+                                                <div class="product-sale">
+                                                    <div class="text-center">
+                                                        <span class="product-saleRed">Giảm 50%</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="product-btn visible-block">
+                                            <a href="" class="crossbar">
+                                                <i class='bx bx-cart'></i>
+                                                Mua nhanh
+                                            </a>
+
+                                            <a href="">
+                                                <i class='bx bxs-bullseye'></i>
+                                                Xem chi tiết
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product-list__item col-3 product-loop">
+                                    <div class="product-block">
+                                        <div class="product-img">
+                                            <a href="">
+                                                <img src="./product2/2.jpg" alt="" class="img-loop">
+                                                <img src="./product2/2.jpg" alt="" class="img-loop img-hover">
+                                            </a>
+                                        </div>
+
+                                        <div class="product-info">
+                                            <div class="product-detail text-center">
+                                                <div class="box-product-detail">
+                                                    <h3 class="product-name"><a href="">Áo FLEX® | nắng thuỷ tinh | sunny</a></h3>
+                                                </div>
+
+                                                <div class="box-product-price">
+                                                    <p class="product-price">
+                                                        <span class="price-sale">80,000đ</span>
+                                                        <span class="product-price-del">
+                                                            <del>160,000đ</del>
+                                                        </span>
+                                                    </p>
+                                                </div>
+
+                                                <div class="product-sale">
+                                                    <div class="text-center">
+                                                        <span class="product-saleRed">Giảm 50%</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="product-btn visible-block">
+                                            <a href="" class="crossbar">
+                                                <i class='bx bx-cart'></i>
+                                                Mua nhanh
+                                            </a>
+
+                                            <a href="">
+                                                <i class='bx bxs-bullseye'></i>
+                                                Xem chi tiết
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    
+                                </div>
+
+                                <div class="product-list__item col-3 product-loop">
+                                    <div class="product-block">
+                                        <div class="product-img">
+                                            <a href="">
+                                                <img src="./product2/3.jpg" alt="" class="img-loop lazyLoad">
+                                                <img src="./product2/3.jpg" alt="" class="img-loop img-hover">
+                                            </a>
+                                        </div>
+
+                                        <div class="product-info">
+                                            <div class="product-detail text-center">
+                                                <div class="box-product-detail">
+                                                    <h3 class="product-name"><a href="">Áo FLEX® | Blue Logo</a></h3>
+                                                </div>
+
+                                                <div class="box-product-price">
+                                                    <p class="product-price">
+                                                        <span class="price-sale">80,000đ</span>
+                                                        <span class="product-price-del">
+                                                            <del>160,000đ</del>
+                                                        </span>
+                                                    </p>
+                                                </div>
+
+                                                <div class="product-sale">
+                                                    <div class="text-center">
+                                                        <span class="product-saleRed">Giảm 50%</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="product-btn visible-block">
+                                            <a href="" class="crossbar">
+                                                <i class='bx bx-cart'></i>
+                                                Mua nhanh
+                                            </a>
+
+                                            <a href="">
+                                                <i class='bx bxs-bullseye'></i>
+                                                Xem chi tiết
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product-list__item col-3 product-loop">
+                                    <div class="product-block">
+                                        <div class="product-img">
+                                            <a href="">
+                                                <img src="./product2/4.jpg" alt="" class="img-loop lazyLoad">
+                                                <img src="./product2/4.jpg" alt="" class="img-loop img-hover">
+                                            </a>
+                                        </div>
+
+                                        <div class="product-info">
+                                            <div class="product-detail text-center">
+                                                <div class="box-product-detail">
+                                                    <h3 class="product-name"><a href="">Áo FLEX® | Baby</a></h3>
+                                                </div>
+
+                                                <div class="box-product-price">
+                                                    <p class="product-price">
+                                                        <span class="price-sale">80,000đ</span>
+                                                        <span class="product-price-del">
+                                                            <del>160,000đ</del>
+                                                        </span>
+                                                    </p>
+                                                </div>
+
+                                                <div class="product-sale">
+                                                    <div class="text-center">
+                                                        <span class="product-saleRed">Giảm 50%</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="product-btn visible-block">
+                                            <a href="" class="crossbar">
+                                                <i class='bx bx-cart'></i>
+                                                Mua nhanh
+                                            </a>
+
+                                            <a href="">
+                                                <i class='bx bxs-bullseye'></i>
+                                                Xem chi tiết
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product-list__item col-3 product-loop">
+                                    <div class="product-block">
+                                        <div class="product-img">
+                                            <a href="">
+                                                <img src="./product2/5.jpg" alt="" class="img-loop lazyLoad">
+                                                <img src="./product2/5.jpg" alt="" class="img-loop img-hover">
+                                            </a>
+                                        </div>
+
+                                        <div class="product-info">
+                                            <div class="product-detail text-center">
+                                                <div class="box-product-detail">
+                                                    <h3 class="product-name"><a href="">Áo FLEX® | PAWS</a></h3>
+                                                </div>
+
+                                                <div class="box-product-price">
+                                                    <p class="product-price">
+                                                        <span class="price-sale">80,000đ</span>
+                                                        <span class="product-price-del">
+                                                            <del>160,000đ</del>
+                                                        </span>
+                                                    </p>
+                                                </div>
+
+                                                <div class="product-sale">
+                                                    <div class="text-center">
+                                                        <span class="product-saleRed">Giảm 50%</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="product-btn visible-block">
+                                            <a href="" class="crossbar">
+                                                <i class='bx bx-cart'></i>
+                                                Mua nhanh
+                                            </a>
+
+                                            <a href="">
+                                                <i class='bx bxs-bullseye'></i>
+                                                Xem chi tiết
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product-list__item col-3 product-loop">
+                                    <div class="product-block">
+                                        <div class="product-img">
+                                            <a href="">
+                                                <img src="./product2/6.jpg" alt="" class="img-loop lazyLoad">
+                                                <img src="./product2/6.jpg" alt="" class="img-loop img-hover">
+                                            </a>
+                                        </div>
+
+                                        <div class="product-info">
+                                            <div class="product-detail text-center">
+                                                <div class="box-product-detail">
+                                                    <h3 class="product-name"><a href="">Áo FLEX® | MonaLisa</a></h3>
+                                                </div>
+
+                                                <div class="box-product-price">
+                                                    <p class="product-price">
+                                                        <span class="price-sale">80,000đ</span>
+                                                        <span class="product-price-del">
+                                                            <del>160,000đ</del>
+                                                        </span>
+                                                    </p>
+                                                </div>
+
+                                                <div class="product-sale">
+                                                    <div class="text-center">
+                                                        <span class="product-saleRed">Giảm 50%</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="product-btn visible-block">
+                                            <a href="" class="crossbar">
+                                                <i class='bx bx-cart'></i>
+                                                Mua nhanh
+                                            </a>
+
+                                            <a href="">
+                                                <i class='bx bxs-bullseye'></i>
+                                                Xem chi tiết
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product-list__item col-3 product-loop">
+                                    <div class="product-block">
+                                        <div class="product-img">
+                                            <a href="">
+                                                <img src="./product2/7.jpg" alt="" class="img-loop lazyLoad">
+                                                <img src="./product2/7.jpg" alt="" class="img-loop img-hover">                                               
+                                            </a>
+                                        </div>
+
+                                        <div class="product-info">
+                                            <div class="product-detail text-center">
+                                                <div class="box-product-detail">
+                                                    <h3 class="product-name"><a href="">Áo FLEX® | mèo chơi thể thao</a></h3>
+                                                </div>
+
+                                                <div class="box-product-price">
+                                                    <p class="product-price">
+                                                        <span class="price-sale">80,000đ</span>
+                                                        <span class="product-price-del">
+                                                            <del>160,000đ</del>
+                                                        </span>
+                                                    </p>
+                                                </div>
+
+                                                <div class="product-sale">
+                                                    <div class="text-center">
+                                                        <span class="product-saleRed">Giảm 50%</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="product-btn visible-block">
+                                            <a href="" class="crossbar">
+                                                <i class='bx bx-cart'></i>
+                                                Mua nhanh
+                                            </a>
+
+                                            <a href="">
+                                                <i class='bx bxs-bullseye'></i>
+                                                Xem chi tiết
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product-list__item col-3 product-loop">
+                                    <div class="product-block">
+                                        <div class="product-img">
+                                            <a href="">
+                                                <img src="./product2/8.jpg" alt="" class="img-loop lazyLoad">
+                                                <img src="./product2/8.jpg" alt="" class="img-loop img-hover">
+                                            </a>
+                                        </div>
+
+                                        <div class="product-info">
+                                            <div class="product-detail text-center">
+                                                <div class="box-product-detail">
+                                                    <h3 class="product-name"><a href="">Áo FLEX® | Xwaves</a></h3>
+                                                </div>
+
+                                                <div class="box-product-price">
+                                                    <p class="product-price">
+                                                        <span class="price-sale">80,000đ</span>
+                                                        <span class="product-price-del">
+                                                            <del>160,000đ</del>
+                                                        </span>
+                                                    </p>
+                                                </div>
+
+                                                <div class="product-sale">
+                                                    <div class="text-center">
+                                                        <span class="product-saleRed">Giảm 50%</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="product-btn visible-block">
+                                            <a href="" class="crossbar">
+                                                <i class='bx bx-cart'></i>
+                                                Mua nhanh
+                                            </a>
+
+                                            <a href="">
+                                                <i class='bx bxs-bullseye'></i>
+                                                Xem chi tiết
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section-product">
+                    <div class="container-product">
+                        <div class="product-title">
+                            <h2>
+                                <a href="">QUẦN THUN</a>
+                            </h2>
+                        </div>
+
+                        <div class="product-content">
+                            <div class="product-content__list">
+                                <div class="product-list__item col-3 product-loop">
+                                    <div class="product-block">
+                                        <div class="product-img">
+                                            <a href="">
+                                                <img src="./product3/1.jpeg" alt="" class="img-loop">
+                                                <img src="./product3/1.jpeg" alt="" class="img-loop img-hover">
+                                            </a>
+                                        </div>
+
+                                        <div class="product-info">
+                                            <div class="product-detail text-center">
+                                                <div class="box-product-detail">
+                                                    <h3 class="product-name"><a href="">Quần Classic Logo (Thêu)</a></h3>
+                                                </div>
+
+                                                <div class="box-product-price">
+                                                    <p class="product-price">
+                                                        <span class="price-sale">100,000đ</span>
+                                                        <span class="product-price-del">
+                                                            <del>240,000đ</del>
+                                                        </span>
+                                                    </p>
+                                                </div>
+
+                                                <div class="product-sale">
+                                                    <div class="text-center">
+                                                        <span class="product-saleRed">Giảm 58%</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="product-btn visible-block">
+                                            <a href="" class="crossbar">
+                                                <i class='bx bx-cart'></i>
+                                                Mua nhanh
+                                            </a>
+
+                                            <a href="">
+                                                <i class='bx bxs-bullseye'></i>
+                                                Xem chi tiết
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product-list__item col-3 product-loop">
+                                    <div class="product-block">
+                                        <div class="product-img">
+                                            <a href="">
+                                                <img src="./product3/2.jpg" alt="" class="img-loop">
+                                                <img src="./product3/2.jpg" alt="" class="img-loop img-hover">
+                                            </a>
+                                        </div>
+
+                                        <div class="product-info">
+                                            <div class="product-detail text-center">
+                                                <div class="box-product-detail">
+                                                    <h3 class="product-name"><a href="">Quần Mini Sketch</a></h3>
+                                                </div>
+
+                                                <div class="box-product-price">
+                                                    <p class="product-price">
+                                                        <span class="price-sale">100,000đ</span>
+                                                        <span class="product-price-del">
+                                                            <del>240,000đ</del>
+                                                        </span>
+                                                    </p>
+                                                </div>
+
+                                                <div class="product-sale">
+                                                    <div class="text-center">
+                                                        <span class="product-saleRed">Giảm 58%</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="product-btn visible-block">
+                                            <a href="" class="crossbar">
+                                                <i class='bx bx-cart'></i>
+                                                Mua nhanh
+                                            </a>
+
+                                            <a href="">
+                                                <i class='bx bxs-bullseye'></i>
+                                                Xem chi tiết
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    
+                                </div>
+
+                                <div class="product-list__item col-3 product-loop">
+                                    <div class="product-block">
+                                        <div class="product-img">
+                                            <a href="">
+                                                <img src="./product3/3.jpg" alt="" class="img-loop lazyLoad">
+                                                <img src="./product3/3.jpg" alt="" class="img-loop img-hover">
+                                            </a>
+                                        </div>
+
+                                        <div class="product-info">
+                                            <div class="product-detail text-center">
+                                                <div class="box-product-detail">
+                                                    <h3 class="product-name"><a href="">Quần Mini Line logo</a></h3>
+                                                </div>
+
+                                                <div class="box-product-price">
+                                                    <p class="product-price">
+                                                        <span class="price-sale">100,000đ</span>
+                                                        <span class="product-price-del">
+                                                            <del>240,000đ</del>
+                                                        </span>
+                                                    </p>
+                                                </div>
+
+                                                <div class="product-sale">
+                                                    <div class="text-center">
+                                                        <span class="product-saleRed">Giảm 58%</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="product-btn visible-block">
+                                            <a href="" class="crossbar">
+                                                <i class='bx bx-cart'></i>
+                                                Mua nhanh
+                                            </a>
+
+                                            <a href="">
+                                                <i class='bx bxs-bullseye'></i>
+                                                Xem chi tiết
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product-list__item col-3 product-loop">
+                                    <div class="product-block">
+                                        <div class="product-img">
+                                            <a href="">
+                                                <img src="./product3/4.jpg" alt="" class="img-loop lazyLoad">
+                                                <img src="./product3/4.jpg" alt="" class="img-loop img-hover">
+                                            </a>
+                                        </div>
+
+                                        <div class="product-info">
+                                            <div class="product-detail text-center">
+                                                <div class="box-product-detail">
+                                                    <h3 class="product-name"><a href="">Quần Multiverse</a></h3>
+                                                </div>
+
+                                                <div class="box-product-price">
+                                                    <p class="product-price">
+                                                        <span class="price-sale">100,000đ</span>
+                                                        <span class="product-price-del">
+                                                            <del>240,000đ</del>
+                                                        </span>
+                                                    </p>
+                                                </div>
+
+                                                <div class="product-sale">
+                                                    <div class="text-center">
+                                                        <span class="product-saleRed">Giảm 58%</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="product-btn visible-block">
+                                            <a href="" class="crossbar">
+                                                <i class='bx bx-cart'></i>
+                                                Mua nhanh
+                                            </a>
+
+                                            <a href="">
+                                                <i class='bx bxs-bullseye'></i>
+                                                Xem chi tiết
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product-list__item col-3 product-loop">
+                                    <div class="product-block">
+                                        <div class="product-img">
+                                            <a href="">
+                                                <img src="./product3/5.jpg" alt="" class="img-loop lazyLoad">
+                                                <img src="./product3/5.jpg" alt="" class="img-loop img-hover">
+                                            </a>
+                                        </div>
+
+                                        <div class="product-info">
+                                            <div class="product-detail text-center">
+                                                <div class="box-product-detail">
+                                                    <h3 class="product-name"><a href="">Quần Blue Logo</a></h3>
+                                                </div>
+
+                                                <div class="box-product-price">
+                                                    <p class="product-price">
+                                                        <span class="price-sale">100,000đ</span>
+                                                        <span class="product-price-del">
+                                                            <del>240,000đ</del>
+                                                        </span>
+                                                    </p>
+                                                </div>
+
+                                                <div class="product-sale">
+                                                    <div class="text-center">
+                                                        <span class="product-saleRed">Giảm 58%</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="product-btn visible-block">
+                                            <a href="" class="crossbar">
+                                                <i class='bx bx-cart'></i>
+                                                Mua nhanh
+                                            </a>
+
+                                            <a href="">
+                                                <i class='bx bxs-bullseye'></i>
+                                                Xem chi tiết
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product-list__item col-3 product-loop">
+                                    <div class="product-block">
+                                        <div class="product-img">
+                                            <a href="">
+                                                <img src="./product3/6.jpg" alt="" class="img-loop lazyLoad">
+                                                <img src="./product3/6.jpg" alt="" class="img-loop img-hover">
+                                            </a>
+                                        </div>
+
+                                        <div class="product-info">
+                                            <div class="product-detail text-center">
+                                                <div class="box-product-detail">
+                                                    <h3 class="product-name"><a href="">Quần Mèo ta</a></h3>
+                                                </div>
+
+                                                <div class="box-product-price">
+                                                    <p class="product-price">
+                                                        <span class="price-sale">100,000đ</span>
+                                                        <span class="product-price-del">
+                                                            <del>240,000đ</del>
+                                                        </span>
+                                                    </p>
+                                                </div>
+
+                                                <div class="product-sale">
+                                                    <div class="text-center">
+                                                        <span class="product-saleRed">Giảm 58%</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="product-btn visible-block">
+                                            <a href="" class="crossbar">
+                                                <i class='bx bx-cart'></i>
+                                                Mua nhanh
+                                            </a>
+
+                                            <a href="">
+                                                <i class='bx bxs-bullseye'></i>
+                                                Xem chi tiết
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product-list__item col-3 product-loop">
+                                    <div class="product-block">
+                                        <div class="product-img">
+                                            <a href="">
+                                                <img src="./product3/7.jpg" alt="" class="img-loop lazyLoad">
+                                                <img src="./product3/7.jpg" alt="" class="img-loop img-hover">                                               
+                                            </a>
+                                        </div>
+
+                                        <div class="product-info">
+                                            <div class="product-detail text-center">
+                                                <div class="box-product-detail">
+                                                    <h3 class="product-name"><a href="">Quần XWaves</a></h3>
+                                                </div>
+
+                                                <div class="box-product-price">
+                                                    <p class="product-price">
+                                                        <span class="price-sale">100,000đ</span>
+                                                        <span class="product-price-del">
+                                                            <del>240,000đ</del>
+                                                        </span>
+                                                    </p>
+                                                </div>
+
+                                                <div class="product-sale">
+                                                    <div class="text-center">
+                                                        <span class="product-saleRed">Giảm 58%</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="product-btn visible-block">
+                                            <a href="" class="crossbar">
+                                                <i class='bx bx-cart'></i>
+                                                Mua nhanh
+                                            </a>
+
+                                            <a href="">
+                                                <i class='bx bxs-bullseye'></i>
+                                                Xem chi tiết
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product-list__item col-3 product-loop">
+                                    <div class="product-block">
+                                        <div class="product-img">
+                                            <a href="">
+                                                <img src="./product3/8.jpg" alt="" class="img-loop lazyLoad">
+                                                <img src="./product3/8.jpg" alt="" class="img-loop img-hover">
+                                            </a>
+                                        </div>
+
+                                        <div class="product-info">
+                                            <div class="product-detail text-center">
+                                                <div class="box-product-detail">
+                                                    <h3 class="product-name"><a href="">Quần MultiColor Logo</a></h3>
+                                                </div>
+
+                                                <div class="box-product-price">
+                                                    <p class="product-price">
+                                                        <span class="price-sale">100,000đ</span>
+                                                        <span class="product-price-del">
+                                                            <del>240,000đ</del>
+                                                        </span>
+                                                    </p>
+                                                </div>
+
+                                                <div class="product-sale">
+                                                    <div class="text-center">
+                                                        <span class="product-saleRed">Giảm 58%</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="product-btn visible-block">
+                                            <a href="" class="crossbar">
+                                                <i class='bx bx-cart'></i>
+                                                Mua nhanh
+                                            </a>
+
+                                            <a href="">
+                                                <i class='bx bxs-bullseye'></i>
+                                                Xem chi tiết
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <script src="./main.js"></script>
+    </div>
+</body>
+</html>
