@@ -45,3 +45,38 @@
 .col-12{
     width: 100%;
 }
+
+@media (min-width: 992px) and (max-width: 1370px) {
+    .header-wrap-icon{
+        display: none;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 991px){
+    .header-wrap{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .header-wrap-logo img{
+        height: 30px;
+    }
+
+    .header-wrap-icon{
+        display: block;
+    }
+
+    .d-none{
+        display: unset;
+    }
+
+    .header__item:first-child{
+        width: 100%;
+    }
+
+    .header__item:nth-child(2), .header__item:last-child{
+        display: none;
+    } 
+}

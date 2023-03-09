@@ -53,3 +53,21 @@ window.addEventListener("load", function(){
 })
 
 
+
+
+function search(){
+    const searchBtn = document.querySelector(".search-menu");
+    const showSearch = document.querySelector(".site-nav");
+    const closeSearchBtn = document.querySelector(".site-close-handle");
+    const siteOverlay = document.querySelector(".site-overlay");
+    searchBtn.addEventListener("click", function(){
+        showSearch.classList.add("active");
+        siteOverlay.classList.add("active");
+    })
+
+    closeSearchBtn.addEventListener("click", function(){
+        showSearch.classList.remove("active");
+        siteOverlay.classList.remove("active");
+    })
+} 
+search();
