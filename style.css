@@ -847,4 +847,8 @@ form.navbar-form .btn-search-mobile{
     .footer-item{
         padding: 0;
     }
+
+    .product-btn{
+        display: none;
+    }
 }
