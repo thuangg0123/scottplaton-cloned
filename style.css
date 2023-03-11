@@ -25,6 +25,14 @@ img{
     max-width: 100%;
 }
 
+.w100{
+    width: 100%;
+}
+
+.d-none{
+    display: none;
+}
+
 .container{
     padding-right: 15px;
     padding-left: 15px;
@@ -483,7 +491,7 @@ img{
 
 .contact .wrapper-contact{
     padding: 40px;
-    border-top: 1px solid #d0d0d0;
+    /* border-top: 1px solid #d0d0d0; */
 }
 
 .wrapper-contact, .wrapper-footer{
@@ -503,11 +511,15 @@ img{
 }
 
 .contact-info p{
+    display: flex;
+    align-items: center;
     margin-bottom: 10px;
 }
 
 .contact-icon{
-    padding: 3px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
     text-align: center;
     color: #fff;
     border-radius: 100%;
@@ -533,7 +545,7 @@ img{
 .contact input{
     background-color: #fff;
     height: 40px;
-    font-size: 15px;
+    font-size: 13px;
     color: #333;
     outline: none;
     border: 1px solid #000;
@@ -969,4 +981,204 @@ form.navbar-form .btn-search-mobile{
     display: block;
     text-transform: uppercase;
     padding: 10px 20px;
+}
+
+.product-shop{
+    box-shadow: inset 0 5px 7px 1px #ccc;
+}
+
+.padding-product-shop{
+    padding: 0 40px;
+}
+
+.product-shop .product-arrows{
+    padding: 10px 0;
+    background: 0 0;
+    border-radius: 0;
+    margin: 0;
+}
+
+ol{
+    list-style: none;
+}
+
+.product > li{
+    display: inline-block;
+    font-size: 13px;
+}
+
+.product > li > a > i{
+    color: #000;
+}
+
+.bar-left::before{
+    content: "|";
+    padding: 0 10px;
+}
+
+#product-body{
+    margin-bottom: 50px;
+}
+
+.wrap-product-title .heading-product{
+    margin-top: 50px;
+}
+
+.heading-product{
+    display: flex;
+    justify-content: space-around;
+}
+
+.heading-product h1{
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.filter-custom, .filter-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.filter-custom{
+    float: left;
+    margin: 10px 0 30px;
+    font-size: 15px;
+}
+
+.filter-custom > span{
+    margin-right: 15px;
+    padding: 10px 0;
+    text-transform: uppercase;
+}
+
+.group-filter{
+    padding: 10px 0;
+    position: relative;
+}
+.filter-title > div{
+    width: 150px;
+}
+
+.layered__subtitle{
+    position: relative;
+    cursor: pointer;
+}
+
+.layered__subtitle > span{
+    font-weight: 700;
+}
+
+.layered_subtitle .icon-control {
+    margin: -2px 0 0 5px;
+    cursor: pointer;
+}
+
+.filter-item input[type=checkbox]{
+    display: none;
+}   
+
+.filter-content {
+    display: flex;
+    border: 1px solid #f1f1f1;
+    padding: 10px;
+    position: absolute;
+    z-index: 99;
+    background: #fff;
+    top: 41px;
+    display: none;
+}
+
+.filter-content > div {
+    width: 140px;
+    max-height: 250px;
+    margin-right: 20px;
+}
+
+.filter-color li {
+    margin: 0 5px 0 0;
+}
+
+.box-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box-list label{
+    display: inline-block;
+    cursor: pointer;
+    line-height: 12px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.filter-color li label{
+    border: 1px solid #eaeaea;
+    width: 25px;
+    height: 25px;
+    padding-top: 6px;
+    padding-left: 6px;
+    float: left;
+    margin-bottom: 5px;
+}
+
+.box-list input[type=checkbox]+label span.button{
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-right: 5px;
+    padding: 0;
+    border: 1px solid #ebebeb;
+}
+
+.filter-color .box-list li input[type=checkbox]+label span.button {
+    background: 0 0;
+    margin: 0;
+    border: none;
+}
+
+.filter-content .filter-price{
+    width: 200px;
+}
+
+.group-filter:hover .filter-content{
+    display: flex;
+}
+
+.option.browse-tags{
+    margin-top: 20px;
+}
+
+.option.browse-tags label{
+    margin-right: 10px;
+}
+
+.sort-by{
+    border: none;
+    outline: none;
+    background: #fff;
+}
+
+.product-body .product-loop{
+    margin-bottom: 40px;
+}
+
+.listPage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.listPage li{
+    padding: 3px 10px;
+    border: 1px solid #444;
+    margin: 0 5px;
+    color: #000;
+}
+
+.listPage li.active{
+    background-color: #444;
+    color: #fff;
+    border: none;
 }

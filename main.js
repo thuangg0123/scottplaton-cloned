@@ -89,3 +89,106 @@ function navBars(){
 }
 
 navBars();
+
+
+
+let thisPage = 1;
+let limit = 24;
+let list = document.querySelectorAll(".product-content__list .product-list__item");
+
+function loadItem(){
+    let beginGet = limit * (thisPage - 1);
+    let endGet = limit * thisPage - 1;
+    list.forEach((item, key)=>{
+        if(key >= beginGet && key <= endGet){
+            item.style.display = 'block';
+        }
+        else{
+            item.style.display = 'none';
+        }
+    })
+    listPage();
+}
+loadItem();
+
+function listPage(){
+    let count = Math.ceil(list.length / limit);
+    document.querySelector('.listPage').innerHTML = '';
+
+    // if(thisPage = count){
+    //     let prevtFirst = document.createElement('li');
+    //     prevtFirst.innerHTML = '<<';
+    //     prevtFirst.title = 'Trang đầu';
+    //     prevtFirst.style.cursor = 'pointer';
+    //     prevtFirst.setAttribute('onclick', "changePage("+ (1) +")");
+    //     document.querySelector('.listPage').appendChild(prevtFirst);
+    // }
+
+    if(thisPage != 1){
+        let prev = document.createElement('li');
+        prev.innerHTML = '<';
+        prev.title = 'Trang trước';
+        prev.style.cursor = 'pointer';
+        prev.setAttribute('onclick', "changePage("+ (thisPage - 1) +")");
+        document.querySelector('.listPage').appendChild(prev);
+    }
+
+    for(i = 1; i<=count; i++){
+        let newPage = document.createElement('li');
+        newPage.innerText = i;
+        if(i == thisPage){
+            newPage.classList.add('active');
+            newPage.title = 'Trang ' + i;
+        }
+        newPage.setAttribute('onclick', "changePage("+ i +")")
+        document.querySelector('.listPage').appendChild(newPage);
+        newPage.style.cursor = 'pointer';
+    }
+
+    if(thisPage != count){
+        let next = document.createElement('li');
+        next.innerHTML = '>';
+        next.title = 'Trang kế';
+        next.style.cursor = 'pointer';
+        next.setAttribute('onclick', "changePage("+ (thisPage + 1) +")");
+        document.querySelector('.listPage').appendChild(next);
+    }
+
+    if(thisPage = count-1){
+        let nextLast = document.createElement('li');
+        nextLast.innerHTML = '>>';
+        nextLast.title = 'Trang cuối';
+        nextLast.style.cursor = 'pointer';
+        nextLast.setAttribute('onclick', "changePage("+ (thisPage + 1) +")");
+        document.querySelector('.listPage').appendChild(nextLast);
+    }
+}
+
+function changePage(i){
+    thisPage = i;
+    loadItem();
+}
+
+
+
+const searchProduct = () =>{
+    const searchBox = document.getElementById("search-item").value.toUpperCase();
+    const storeitems = document.getElementById("product-list");
+    const product = document.querySelectorAll(".product-list__item");
+    const nameProduct = storeitems.getElementsByClassName("product-name");
+
+    for(let i = 0; i< nameProduct.length; i++){
+        let match = product[i].getElementsByClassName("product-name")[0];
+
+        if(match){
+            let textvalue = match.textContent || match.innerHTML
+
+            if(textvalue.toUpperCase().indexOf(searchBox) > -1){
+                product[i].style.display = "";
+            }
+            else{
+                product[i].style.display = "none";
+            }
+        }
+    }
+}
